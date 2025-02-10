@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task.2 todo-list </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="box">
+            <!-- logo & date -->
+            <form>
+                <div class="logobox">
+                    <i class="fa-solid fa-list-check"></i>
+                    <p class="logo">toodoo</p>
+                </div>
+                <div class="date">
+                    <p class="datee">date:</p>
+                    <input type="date" class="datebox">
+                </div>
+            </form>
+            <!-- taskbar -->
+            <form>
+                <div class="task">
+                    <input type="text" class="todo-input" placeholder="Today I need to">
+                    <button class="todo-button" type="submit">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="select">
+                    <select name="todos" class="filter-todo">
+                        <option value="all">Task-status</option>
+                        <option value="completed">Done</option>
+                        <option value="incomplete">Pending</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+                </div>
+            </form>
+            <!-- todo list -->
+            <div class="scroll">
+                <div class="todo-container">
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+            <!-- task priority -->
+            <div class="priority">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p class="sign">High priority</p>
+            </div>
+        </div>
+    </main>     
+    <script src="./script.js"></script>
+</body>
+</html>
