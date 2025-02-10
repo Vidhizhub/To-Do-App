@@ -1,4 +1,6 @@
 # To-Do-App
+This project is a To-Do List Web Application built using HTML, CSS, and JavaScript.
+
 # Features of the Project
 
 1. Adding a Task
